@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Devin Rousso</string>
+	<key>Builder Version</key>
+	<string>12604.1.6</string>
+	<key>CFBundleDisplayName</key>
+	<string>RedditNav</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.dcrousso.redditnav-safari</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0.0</string>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>js/redditnav.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>css/redditnav.css</string>
+		</array>
+		<key>Whitelist</key>
+		<array>
+			<string>http://*.reddit.com/r/*/comments/*</string>
+			<string>https://*.reddit.com/r/*/comments/*</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Accelerates the way you browse reddit comments.</string>
+	<key>DeveloperIdentifier</key>
+	<string>Q5M4T22BE9</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.reddit.com</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>http://devinrousso.com/projects/RedditNav-Safari/SafariUpdate.plist</string>
+	<key>Website</key>
+	<string>http://devinrousso.com</string>
+</dict>
+</plist>

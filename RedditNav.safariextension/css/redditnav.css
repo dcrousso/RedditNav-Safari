@@ -1,0 +1,97 @@
+.redditnav {
+	position: fixed;
+	right: 20px;
+	bottom: 15px;
+	z-index: 1000000;
+}
+
+.redditnav > div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 10px 5px;
+}
+
+.redditnav > div:first-child {
+	z-index: 1;
+}
+
+.redditnav > div ~ div {
+	transition: all 500ms 50ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.redditnav:hover > div ~ div {
+	transform: translateY(-70px);
+}
+
+.redditnav > div > a {
+	position: relative;
+	display: block;
+	height: 56px;
+	width: 56px;
+	margin: 0;
+	padding: 0;
+	background-color: currentColor;
+	border-radius: 50%;
+	box-shadow: hsla(0, 0%, 0%, 0.15) 0 0 4px,
+	            hsla(0, 0%, 0%, 0.25) 0 4px 8px;
+	cursor: pointer;
+}
+
+.redditnav > div > a::after {
+	position: absolute;
+	top: 16px;
+	right: 70px;
+	padding: 4px 10px;
+	content: attr(data-label);
+	white-space: nowrap;
+	font-size: 13px;
+	font-weight: bold;
+	color: white;
+	background-color: black;
+	border-radius: 3px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 500ms 50ms;
+}
+
+.redditnav > div > a:hover::after {
+	opacity: 0.75;
+	transition: opacity 300ms 250ms;
+}
+
+.redditnav > div > a > svg {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 16px;
+	height: 16px;
+}
+
+/* compass */
+/* chevron-down */
+.redditnav > div:nth-child(1) > a > svg {
+	transform: rotate(360deg);
+	transition: transform 150ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+.redditnav:hover > div:nth-child(1) > a > svg {
+	transform: rotate(0deg);
+}
+
+/* chevron-up */
+.redditnav > div:nth-child(2) > a > svg {
+	top: 19px;
+}
+
+.redditnav > div:nth-child(1) > a > svg:nth-child(1),
+.redditnav:hover > div ~ div,
+.redditnav:hover > div:nth-child(1) > a > svg:nth-child(2) {
+	opacity: 1;
+}
+
+.redditnav > div ~ div,
+.redditnav > div:nth-child(1) > a > svg:nth-child(2),
+.redditnav:hover > div:nth-child(1) > a > svg:nth-child(1) {
+	opacity: 0;
+}
