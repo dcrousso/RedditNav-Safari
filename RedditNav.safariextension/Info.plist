@@ -5,9 +5,9 @@
 	<key>Author</key>
 	<string>Devin Rousso</string>
 	<key>Builder Version</key>
-	<string>12604.1.8.1.2</string>
+	<string>12604.1.12</string>
 	<key>CFBundleDisplayName</key>
-	<string>RedditNav</string>
+	<string>Navigator for Reddit</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.dcrousso.redditnav-safari</string>
 	<key>CFBundleInfoDictionaryVersion</key>
